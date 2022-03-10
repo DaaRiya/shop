@@ -1,0 +1,13 @@
+<div  style="text-align: center; ">
+<%= link_to 'Назад', '/products' %>
+
+<h3>
+  Корзина
+</h3>
+
+  <li>
+    <%= Product.find_by_id(3).title%>
+    <%= Product.find_by_id(3).price%>
+  </li>
+
+</div>

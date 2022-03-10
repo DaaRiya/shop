@@ -9,7 +9,7 @@
 
 <br/>
 
-<%= form_for @user, remote: true do |f| %>
+<%= form_for @user, url:auth_url, remote: true do |f| %>
   <div class="field">
     <%= f.label 'Логин' %>
     <%= f.text_field :login , type: :login %>
@@ -20,17 +20,11 @@
     <%= f.text_field :password ,  type: :password %>
   </div>
   <h1></h1>
-  <div class="field">
-    <%= f.label 'Подтверждение пароля' %>
-    <%= f.text_field :password ,  type: :password %>
-  </div>
+    <div class="field">
+      <%= link_to 'Назад','/'%>
+      <%= f.submit 'Войти' %>
+    </div >
 
 <% end %>
-<h1></h1>
-  <div>
-  <%= link_to 'Назад', '/' %>
-<button>
-  <%= link_to 'Войти', '/products' %>
-</button>
-  </div>
+
 </div>

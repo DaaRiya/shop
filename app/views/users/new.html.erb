@@ -19,16 +19,15 @@
   </div>
   <h1></h1>
   <div class="field">
-    <%= f.label 'Подтверждение пароля' %>
-    <%= f.text_field :password ,  type: :password %>
+    <%= f.label 'Имя' %>
+    <%= f.text_field :name ,  type: :name %>
   </div>
+    <h1></h1>
+    <div class="field">
+      <%= link_to 'Назад', '/' %>
+      <%= f.submit 'Зарегистироваться' %>
+    </div>
 
 <% end %>
-<h1></h1>
-  <div style="">
-  <%= link_to 'Назад', '/' %>
-<button>
-  <%= link_to 'Зарегистрироваться', '/auth' %>
-</button>
-  </div>
+
 </div>

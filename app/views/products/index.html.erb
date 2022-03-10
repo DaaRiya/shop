@@ -1,5 +1,5 @@
 <div  style="text-align: center; ">
-<%= link_to 'Назад', '/' %>
+<%= link_to 'Назад', auth_url, method: :delete  %>
 <%= link_to 'Корзина', '/bag' %>
 <h3>
   Все товары
@@ -7,16 +7,14 @@
 
 <p>Название  Цена</p>
 
-
-<ul>
-  <%= while @num <= @products.count do %>
-    <li>
-      <%= Product.find_by_id(@num).title %>
-      <%= Product.find_by_id(@num).price %>
-      <button>+</button>
-      <%- @num += 1 %>
-    </li>
+  <%- @products.each do |x| %>
+  <li>
+    <%= x.title %>
+    <%= x.price %>
+    <button>
+      +
+    </button>
+  </li>
   <% end %>
-  <%- @num = 1 %>
-</ul>
+
 </div>
