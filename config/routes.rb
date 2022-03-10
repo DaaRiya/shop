@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   # авторизация
   get '/auth', to: 'auth#index'
 
-
-  get '/main', to: 'main#index'
+  get '/products', to: 'products#index'
 end
 
