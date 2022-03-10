@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It is base of internet shop.
+Run 
+<b> rails s </b> 
+to start. And open http://localhost:3000
+<br/>
+You can register and then log in. Registered players can see the list of products and must be able to add to the cart. There is also a shopping cart where the products you plan to buy should be displayed
